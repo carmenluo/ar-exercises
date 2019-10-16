@@ -19,8 +19,8 @@ puts "----------"
 # Attempt to create a store with the inputted name but leave out the other fields (annual_revenue, mens_apparel, and womens_apparel)
 # Display the error messages provided back from ActiveRecord to the user (one on each line) after you attempt to save/create the record
 # Your code goes here ...
-puts "Enter store name"
-store_input = gets.chomp
-new_store = Store.create(name: store_input, annual_revenue: 5000, mens_apparel: false, womens_apparel: false)
-puts new_store.errors.full_messages
-puts new_store.errors.messages
+# puts "Enter store name"
+# store_input = gets.chomp
+# new_store = Store.create(name: store_input, annual_revenue: 5000, mens_apparel: false, womens_apparel: false)
+# puts new_store.errors.full_messages
+# puts new_store.errors.messages

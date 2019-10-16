@@ -11,9 +11,9 @@ puts "----------"
 @store1.employees.create(first_name: "Carmen", last_name: "Luo", hourly_rate: 80)
 @store1.employees.create(first_name: "Car", last_name: "Lu", hourly_rate: 50)
 @store2 = Store.find_by(id: 2)
-@store2.employees.create(first_name: "Turram", last_name: "Virani", hourly_rate: 60)
-@store2.employees.create(first_name: "Cn", last_name: "Luo", hourly_rate: 80)
-em= @store2.employees.create(first_name: "Dan", last_name: "Lu", hourly_rate: 30)
-puts em.valid?
-puts em.errors.messages
+# @store2.employees.create(first_name: "Turram", last_name: "Virani", hourly_rate: 60)
+# @store2.employees.create(first_name: "Cn", last_name: "Luo", hourly_rate: 80)
+# em= @store2.employees.create(first_name: "Dan", last_name: "Lu", hourly_rate: 30)
+# puts em.valid?
+# puts em.errors.messages
 @store1.update(name: 'Toronto')
