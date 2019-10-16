@@ -5,7 +5,7 @@ class Employee < ActiveRecord::Base
   validates :hourly_rate, numericality: { only_interger: true, greater_than: 40, less_than: 200, message: "%{value} seems wrong"}
   validates_associated :store
 
-  before_create :set_password
+  before_save :set_password
   private
   def set_password
     if self.password.blank?
