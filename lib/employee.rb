@@ -8,7 +8,9 @@ class Employee < ActiveRecord::Base
   before_create :set_password
   private
   def set_password
-    self.password = "password"
+    if self.password.blank?
+      self.password = "password"
+    end
   end
 
 end
